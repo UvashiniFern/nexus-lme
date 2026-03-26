@@ -1,0 +1,105 @@
+<template>
+
+    <!-- INCOME -->
+    <lightning-card title="Income">
+        <lightning-button label="Add Income" onclick={addIncome}></lightning-button>
+
+        <template for:each={incomes} for:item="inc" for:index="index">
+            <div key={inc.id} class="slds-grid slds-gutters slds-m-around_small">
+
+                <lightning-input label="Income Source"
+                    value={inc.source}
+                    data-index={index}
+                    onchange={handleIncomeChange}>
+                </lightning-input>
+
+                <lightning-input type="number" label="Monthly Amount"
+                    value={inc.amount}
+                    data-index={index}
+                    onchange={handleIncomeChange}>
+                </lightning-input>
+
+                <lightning-button-icon icon-name="utility:delete"
+                    data-index={index}
+                    onclick={removeIncome}>
+                </lightning-button-icon>
+
+            </div>
+        </template>
+    </lightning-card>
+
+    <!-- ASSETS -->
+    <lightning-card title="Assets">
+        <lightning-button label="Add Asset" onclick={addAsset}></lightning-button>
+
+        <template for:each={assets} for:item="ast" for:index="index">
+            <div key={ast.id} class="slds-grid slds-gutters slds-m-around_small">
+
+                <!-- PICKLIST -->
+                <lightning-combobox
+                    label="Asset Type"
+                    value={ast.type}
+                    data-index={index}
+                    options={assetTypeOptions}
+                    onchange={handleAssetChange}>
+                </lightning-combobox>
+
+                <lightning-input type="number" label="Estimated Value"
+                    value={ast.value}
+                    data-index={index}
+                    onchange={handleAssetChange}>
+                </lightning-input>
+
+                <lightning-input label="Description"
+                    value={ast.desc}
+                    data-index={index}
+                    onchange={handleAssetChange}>
+                </lightning-input>
+
+                <lightning-button-icon icon-name="utility:delete"
+                    data-index={index}
+                    onclick={removeAsset}>
+                </lightning-button-icon>
+
+            </div>
+        </template>
+    </lightning-card>
+
+    <!-- LIABILITIES -->
+    <lightning-card title="Liabilities">
+        <lightning-button label="Add Liability" onclick={addLiability}></lightning-button>
+
+        <template for:each={liabilities} for:item="lib" for:index="index">
+            <div key={lib.id} class="slds-grid slds-gutters slds-m-around_small">
+
+                <!-- PICKLIST -->
+                <lightning-combobox
+                    label="Liability Type"
+                    value={lib.type}
+                    data-index={index}
+                    options={liabilityTypeOptions}
+                    onchange={handleLiabilityChange}>
+                </lightning-combobox>
+
+                <lightning-input type="number" label="Amount Owed"
+                    value={lib.amount}
+                    data-index={index}
+                    onchange={handleLiabilityChange}>
+                </lightning-input>
+
+                <lightning-input type="number" label="Monthly Payment"
+                    value={lib.payment}
+                    data-index={index}
+                    onchange={handleLiabilityChange}>
+                </lightning-input>
+
+                <lightning-button-icon icon-name="utility:delete"
+                    data-index={index}
+                    onclick={removeLiability}>
+                </lightning-button-icon>
+
+            </div>
+        </template>
+    </lightning-card>
+
+</template>
