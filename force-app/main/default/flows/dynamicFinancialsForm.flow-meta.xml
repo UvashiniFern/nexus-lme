@@ -33,7 +33,7 @@
         <allowPause>true</allowPause>
         <fields>
             <name>DynamicForm</name>
-            <extensionName>Baytree:dynamicFinancialsForm</extensionName>
+            <extensionName>dynamicFinancialsForm</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>assetList</name>
