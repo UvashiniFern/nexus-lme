@@ -231,7 +231,7 @@
         </fields>
         <fields>
             <name>Form</name>
-            <extensionName>Baytree:dynamicFinancialsForm</extensionName>
+            <extensionName>c:dynamicFinancialsForm</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>assetList</name>
