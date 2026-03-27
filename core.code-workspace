@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "c:/Users/UvashiniFern/Documents/GitHub/nexus-lme"
+    }
+  ],
+  "settings": {
+    "eslint.workingDirectories": [
+      "c:/Users/UvashiniFern/Documents/GitHub/nexus-lme"
+    ],
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "eslint.options": {
+      "overrideConfigFile": "c:\\Users\\UvashiniFern\\Documents\\GitHub\\nexus-lme\\.eslintrc.json"
+    }
+  }
+}
