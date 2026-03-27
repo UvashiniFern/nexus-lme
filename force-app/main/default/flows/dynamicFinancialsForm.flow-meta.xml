@@ -33,7 +33,7 @@
         <allowPause>true</allowPause>
         <fields>
             <name>DynamicForm</name>
-            <extensionName>Baytree:dynamicFinancialsForm</extensionName>
+            <extensionName>c:dynamicFinancialsForm</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>assetList</name>
@@ -50,7 +50,7 @@
             <inputParameters>
                 <name>liabilityList</name>
                 <value>
-                    <elementReference>liabilittyList</elementReference>
+                    <elementReference>liabilityList</elementReference>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -83,7 +83,7 @@
         <isOutput>true</isOutput>
     </variables>
     <variables>
-        <name>liabilittyList</name>
+        <name>liabilityList</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
